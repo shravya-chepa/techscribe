@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create a post</title>
+        <link rel="stylesheet" href="css/article.css">
+        <link rel="stylesheet" href="css/homepage.css">
+        <script src="https://kit.fontawesome.com/1b9706ff05.js" crossorigin="anonymous"></script>
+    </head>
+    <body >
+        <div class="navig">
+            <div class="left">
+                <div class="link">
+                    <a href="index.php">TechScribe</a>
+                </div>
+                <div class="link">
+                    <a href="categoryPage.php?category=Gaming">Gaming</a>
+                </div>
+                <div class="link">
+                    <a href="categoryPage.php?category=Tech">Tech</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="link-2">
+                    <a href="login.php">Login</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <form action="" method="" class="post-content">
+            <label for="title"><strong>Title</strong></label>
+            <br>
+            <input type="text" id="title" autocomplete="off">
+            <br><br>
+
+            <label for="content" class="content"><strong>Content</strong></label>
+            <br>
+            <textarea name="content" id="content" cols="90" rows="25"></textarea>
+            <br><br>
+
+            <label for="file-upload" class="custom-file-upload">
+                <i class="fas fa-arrow-circle-up"></i> Image Upload
+            </label>
+            <input id="file-upload" type="file"/>
+            <br><br>
+
+            <label for="categories"><strong>Choose a category</strong></label><br><br>
+            <select name="categories" id="categories">
+                <option value="Gaming">Gaming</option>
+                <option value="Tech">Tech</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="IoT">IoT</option>
+                <option value="AI">AI</option>
+            </select>
+            <br><br><br>
+
+            <input type="submit" value="Post" class="btn">
+            <br><br>
+        </form>
+        
+    </body>
+</html>
